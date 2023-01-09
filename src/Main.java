@@ -45,6 +45,7 @@ public class Main {
         System.out.println("Varsta: " + person3.varsta);
         System.out.println("Genul: " + person3.gen);
 
+*/
          // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
 
 
@@ -59,14 +60,18 @@ public class Main {
         animal1.mananca();
         System.out.println(animal1.afiseaza());
         System.out.println(animal2.afiseaza());
-*/
 
+        Animal animal3 = new Animal("Sarpe", "verde", false, 7);
 
+        System.out.println(animal3.afiseaza());
+        animal3.numarPicioare();
+/*
         Film film1 = new Film();
         film1.setTitlu("Avatar 2");
         film1.getTitlu();
         film1.rating =7.9;
         film1.potrivitPtCopii =false;
+
 
         film1.afiseazaDacaEPotrivitPtCopii();
         System.out.println(film1.anProductie);
@@ -79,6 +84,13 @@ public class Main {
         System.out.println(film1.afiseazaRating());
         System.out.println(film2.afiseazaRating());
 
-    }
+        System.out.println(Film.afiseazaUnText());
 
+        afiseaza2();
+*/
+    }
+    public static void afiseaza2(){
+        System.out.println("Aficeaza 2");
+
+    }
 }
