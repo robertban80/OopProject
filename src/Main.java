@@ -125,21 +125,40 @@ public class Main {
 //        System.out.println(urs.getUndeTraieste());
 //
 //    }
+//
+//        Elev elev1 = new Elev("Pop Andrei");
+//        Elev elev2 = new Elev("Ionescu Maria");
+//        Elev elev3 = new Elev("Popescu Vlad");
+//        Elev.diriginte = "Diriginte";
+//        elev1.diriginte = "Diriginte1";
+//        elev2.diriginte = "Diriginte2";
+//        elev3.diriginte = "Diriginte3";
+//        elev1.afiseazaElevDiriginte();
+//        elev2.afiseazaElevDiriginte();
+//        elev3.afiseazaElevDiriginte();
+//    }
+//    public static void afiseaza2(){
+//        System.out.println("Afiseaza 2");
+//    }
 
-        Elev elev1 = new Elev("Pop Andrei");
-        Elev elev2 = new Elev("Ionescu Maria");
-        Elev elev3 = new Elev("Popescu Vlad");
-        Elev.diriginte = "Diriginte";
-        elev1.diriginte = "Diriginte1";
-        elev2.diriginte = "Diriginte2";
-        elev3.diriginte = "Diriginte3";
-        elev1.afiseazaElevDiriginte();
-        elev2.afiseazaElevDiriginte();
-        elev3.afiseazaElevDiriginte();
+//        Inotator inotator1 = new Inotator();
+//        Maratonist maratonist1 = new Maratonist();
+//        inotator1.seAntreneaza();
+//        maratonist1.seAntreneaza();
+//        inotator1.seOdihneste();
+//        maratonist1.seOdihneste();
+
+
+// exercitii lab 27
+        System.out.println("Exercitii Lab 27! \n");
+        SmartphoneIOS smartphoneios1 = new SmartphoneIOS();
+        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid();
+
+        smartphoneios1.porneste();
+        smartphoneios1.seOpreste();
+        smartphoneAndroid1.porneste();
+        smartphoneAndroid1.seOpreste();
+
+// pana aici!!!
     }
-    public static void afiseaza2(){
-        System.out.println("Afiseaza 2");
-    }
-
-
 }
