@@ -72,60 +72,74 @@ public class Main {
 
 
         // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
+//
+//
+//        Animal animal1 = new Animal("Caine", "Galben", false);
+//        Animal animal2 = new Animal("Pisica");
+//
+//        // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
+//
+//        animal1.doarme();
+//        animal2.doarme();
+//        animal2.mananca();
+//        animal1.mananca();
+//        System.out.println(animal1.afiseaza());
+//        System.out.println(animal2.afiseaza());
+//
+//        Animal animal3 = new Animal("Sarpe", "verde", false, 7);
+//
+//        System.out.println(animal3.afiseaza());
+//        animal3.numarPicioare();
+//
+////11.	Creati 4 obiecte (caine, papagal, caracatita) si apelati metoda mai sus creata cu fiecare din ele
+//
+//        Animal papagal = new Animal("Marioara", "Fucsia");
+//        Animal caine = new Animal("Rex", "galben", true);
+//        Animal caracatita = new Animal("Nemo", "Roz", false, 8);
+//        Animal urs = new Animal("Baloo");
+//        System.out.println("Afisare numar picioare pentru fiecare animal:");
+//
+//        papagal.nrPicioare = 2;
+//        System.out.print("Papagalul "+ papagal.nume + " ");
+//        papagal.numarPicioare();
+//        caine.nrPicioare = 4;
+//        System.out.print("Cainele " + caine.nume + " ");
+//        caine.numarPicioare();
+//        System.out.print("Caracatita " + caracatita.nume + " ");
+//        caracatita.numarPicioare();
+//        System.out.print("Ursul " + urs.nume + " ");
+//        urs.numarPicioare();
+//
+//
+//        //12.	Adaugati un camp nou de tip private undeTraieste. Posibile valori: “in apa”, “pe uscat”.
+//        // Adaugati getter si setteri pt noul camp. Afisati campul pentru obiectele de la punctul 11.
+//
+//        System.out.println("Afisam fiecare animal unde traieste:");
+//        papagal.setUndeTraieste("pe uscat");
+//        System.out.println(papagal.getUndeTraieste());
+//        caine.setUndeTraieste("pe uscat");
+//        System.out.println(caine.getUndeTraieste());
+//        caracatita.setUndeTraieste("in apa");
+//        System.out.println(caracatita.getUndeTraieste());
+//        urs.setUndeTraieste("pe uscat");
+//        System.out.println(urs.getUndeTraieste());
+//
+//    }
 
-
-        Animal animal1 = new Animal("Caine", "Galben", false);
-        Animal animal2 = new Animal("Pisica");
-
-        // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
-
-        animal1.doarme();
-        animal2.doarme();
-        animal2.mananca();
-        animal1.mananca();
-        System.out.println(animal1.afiseaza());
-        System.out.println(animal2.afiseaza());
-
-        Animal animal3 = new Animal("Sarpe", "verde", false, 7);
-
-        System.out.println(animal3.afiseaza());
-        animal3.numarPicioare();
-
-//11.	Creati 4 obiecte (caine, papagal, caracatita) si apelati metoda mai sus creata cu fiecare din ele
-
-        Animal papagal = new Animal("Marioara", "Fucsia");
-        Animal caine = new Animal("Rex", "galben", true);
-        Animal caracatita = new Animal("Nemo", "Roz", false, 8);
-        Animal urs = new Animal("Baloo");
-        System.out.println("Afisare numar picioare pentru fiecare animal:");
-
-        papagal.nrPicioare = 2;
-        System.out.print("Papagalul "+ papagal.nume + " ");
-        papagal.numarPicioare();
-        caine.nrPicioare = 4;
-        System.out.print("Cainele " + caine.nume + " ");
-        caine.numarPicioare();
-        System.out.print("Caracatita " + caracatita.nume + " ");
-        caracatita.numarPicioare();
-        System.out.print("Ursul " + urs.nume + " ");
-        urs.numarPicioare();
-
-
-        //12.	Adaugati un camp nou de tip private undeTraieste. Posibile valori: “in apa”, “pe uscat”.
-        // Adaugati getter si setteri pt noul camp. Afisati campul pentru obiectele de la punctul 11.
-
-        System.out.println("Afisam fiecare animal unde traieste:");
-        papagal.setUndeTraieste("pe uscat");
-        System.out.println(papagal.getUndeTraieste());
-        caine.setUndeTraieste("pe uscat");
-        System.out.println(caine.getUndeTraieste());
-        caracatita.setUndeTraieste("in apa");
-        System.out.println(caracatita.getUndeTraieste());
-        urs.setUndeTraieste("pe uscat");
-        System.out.println(urs.getUndeTraieste());
-
+        Elev elev1 = new Elev("Pop Andrei");
+        Elev elev2 = new Elev("Ionescu Maria");
+        Elev elev3 = new Elev("Popescu Vlad");
+        Elev.diriginte = "Diriginte";
+        elev1.diriginte = "Diriginte1";
+        elev2.diriginte = "Diriginte2";
+        elev3.diriginte = "Diriginte3";
+        elev1.afiseazaElevDiriginte();
+        elev2.afiseazaElevDiriginte();
+        elev3.afiseazaElevDiriginte();
     }
     public static void afiseaza2(){
         System.out.println("Afiseaza 2");
     }
+
+
 }
