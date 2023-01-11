@@ -46,13 +46,13 @@ public class Main {
         System.out.println("Genul: " + person3.gen);
 
 */
-         // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
+        // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
 
 
         Animal animal1 = new Animal("Caine", "Galben", false);
         Animal animal2 = new Animal("Pisica");
 
-         // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
+        // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
 
         animal1.doarme();
         animal2.doarme();
@@ -88,9 +88,31 @@ public class Main {
 
         afiseaza2();
 */
+
+//11.	Creati 4 obiecte (caine, papagal, caracatita) si apelati metoda mai sus creata cu fiecare din ele
+        Animal papagal = new Animal("Marioara", "Fucsia");
+        Animal caine = new Animal("Rex", "galben", true);
+        Animal caracatita = new Animal("Nemo", "Roz", false, 8);
+        Animal urs = new Animal("Baloo");
+
+        //12.	Adaugati un camp nou de tip private undeTraieste. Posibile valori: “in apa”, “pe uscat”.
+        // Adaugati getter si setteri pt noul camp. Afisati campul pentru obiectele de la punctul 11.
+
+
+        papagal.setUndeTraieste("America de sud");
+        System.out.println(papagal.getUndeTraieste());
+        caine.setUndeTraieste("In curte");
+        System.out.println(caine.getUndeTraieste());
+        caracatita.setUndeTraieste("In mare");
+        System.out.println(caracatita.getUndeTraieste());
+        urs.setUndeTraieste("In padurile din Romania");
+        System.out.println(urs.getUndeTraieste());
+
     }
     public static void afiseaza2(){
-        System.out.println("Aficeaza 2");
+        System.out.println("Afiseaza 2");
+
+
 
     }
 }

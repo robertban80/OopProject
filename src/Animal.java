@@ -10,6 +10,18 @@ public class Animal {
 
     int nrPicioare;
 
+    private String undeTraieste; // adica, unde traieste animalul
+
+    // getter-setter pentru undeTraieste
+
+    public String getUndeTraieste() {
+        return undeTraieste;
+    }
+
+    public void setUndeTraieste(String undeTraieste) {
+        this.undeTraieste = undeTraieste;
+    }
+
     //2.	Adaugati un constructor cu 0 parametri cu valori default (nume “unknwon”, culoare “unknown”, vegetarian “false”);
     //9.	Creati/updatati constructorul a.i. sa contina noul camp
     public Animal() {
@@ -81,6 +93,8 @@ public class Animal {
         } else {
             System.out.println("Are alt numar de picioare!");
         }
+
+
     }
 }
 
