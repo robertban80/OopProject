@@ -46,25 +46,6 @@ public class Main {
         System.out.println("Genul: " + person3.gen);
 
 */
-        // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
-
-
-        Animal animal1 = new Animal("Caine", "Galben", false);
-        Animal animal2 = new Animal("Pisica");
-
-        // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
-
-        animal1.doarme();
-        animal2.doarme();
-        animal2.mananca();
-        animal1.mananca();
-        System.out.println(animal1.afiseaza());
-        System.out.println(animal2.afiseaza());
-
-        Animal animal3 = new Animal("Sarpe", "verde", false, 7);
-
-        System.out.println(animal3.afiseaza());
-        animal3.numarPicioare();
 /*
         Film film1 = new Film();
         film1.setTitlu("Avatar 2");
@@ -88,6 +69,27 @@ public class Main {
 
         afiseaza2();
 */
+
+
+        // Homework: 6.	In Clasa Main, creati doua obiecte de tip Animal folosind constructori si valori la alegere
+
+
+        Animal animal1 = new Animal("Caine", "Galben", false);
+        Animal animal2 = new Animal("Pisica");
+
+        // 7.	Tot in Main, apelati cele 3 metode (mananca, doarme, afiseaza) cu fiecare din cele doua obiecte
+
+        animal1.doarme();
+        animal2.doarme();
+        animal2.mananca();
+        animal1.mananca();
+        System.out.println(animal1.afiseaza());
+        System.out.println(animal2.afiseaza());
+
+        Animal animal3 = new Animal("Sarpe", "verde", false, 7);
+
+        System.out.println(animal3.afiseaza());
+        animal3.numarPicioare();
 
 //11.	Creati 4 obiecte (caine, papagal, caracatita) si apelati metoda mai sus creata cu fiecare din ele
 
@@ -125,8 +127,5 @@ public class Main {
     }
     public static void afiseaza2(){
         System.out.println("Afiseaza 2");
-
-
-
     }
 }
