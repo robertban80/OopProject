@@ -90,22 +90,36 @@ public class Main {
 */
 
 //11.	Creati 4 obiecte (caine, papagal, caracatita) si apelati metoda mai sus creata cu fiecare din ele
+
         Animal papagal = new Animal("Marioara", "Fucsia");
         Animal caine = new Animal("Rex", "galben", true);
         Animal caracatita = new Animal("Nemo", "Roz", false, 8);
         Animal urs = new Animal("Baloo");
+        System.out.println("Afisare numar picioare pentru fiecare animal:");
+
+        papagal.nrPicioare = 2;
+        System.out.print("Papagalul "+ papagal.nume + " ");
+        papagal.numarPicioare();
+        caine.nrPicioare = 4;
+        System.out.print("Cainele " + caine.nume + " ");
+        caine.numarPicioare();
+        System.out.print("Caracatita " + caracatita.nume + " ");
+        caracatita.numarPicioare();
+        System.out.print("Ursul " + urs.nume + " ");
+        urs.numarPicioare();
+
 
         //12.	Adaugati un camp nou de tip private undeTraieste. Posibile valori: “in apa”, “pe uscat”.
         // Adaugati getter si setteri pt noul camp. Afisati campul pentru obiectele de la punctul 11.
 
-
-        papagal.setUndeTraieste("America de sud");
+        System.out.println("Afisam fiecare animal unde traieste:");
+        papagal.setUndeTraieste("pe uscat");
         System.out.println(papagal.getUndeTraieste());
-        caine.setUndeTraieste("In curte");
+        caine.setUndeTraieste("pe uscat");
         System.out.println(caine.getUndeTraieste());
-        caracatita.setUndeTraieste("In mare");
+        caracatita.setUndeTraieste("in apa");
         System.out.println(caracatita.getUndeTraieste());
-        urs.setUndeTraieste("In padurile din Romania");
+        urs.setUndeTraieste("pe uscat");
         System.out.println(urs.getUndeTraieste());
 
     }
