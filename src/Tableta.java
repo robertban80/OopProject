@@ -1,4 +1,4 @@
-public class Tableta extends Device{
+public abstract class Tableta extends Device implements ObiectElectronic{
     @Override
     void porneste() {
         System.out.println("Tableta porneste");
@@ -7,5 +7,10 @@ public class Tableta extends Device{
     @Override
     void seOpreste() {
         System.out.println("Tableta se opreste");
+    }
+
+    @Override
+    public boolean eConectat() {
+        return false;
     }
 }

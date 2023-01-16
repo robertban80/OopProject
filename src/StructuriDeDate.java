@@ -28,5 +28,18 @@ public class StructuriDeDate {
         dictionarulNostru.replace(1,"Noua valoare");
         System.out.println(dictionarulNostru.entrySet());
 
+// tema lab 28 - 16.01.2023
+        HashMap <String, Boolean> cineTreceExamenul = new HashMap<>();
+        cineTreceExamenul.put("Gigel",false);
+        cineTreceExamenul.put("Georgel",true);
+        cineTreceExamenul.put("Maricica",true);
+        cineTreceExamenul.put("Ana",true);
+        cineTreceExamenul.put("Costel",false);
+
+        System.out.println(cineTreceExamenul.entrySet());
+
+        for (String value: cineTreceExamenul){
+            System.out.println(value);
+        }
     }
 }

@@ -150,23 +150,30 @@ public class Main {
 
 
 // exercitii lab 27
-//        System.out.println("Exercitii Lab 27! \n");
-//        SmartphoneIOS smartphoneios1 = new SmartphoneIOS();
-//        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid();
+        System.out.println("Exercitii Lab 27! \n");
+        SmartphoneIOS smartphoneios1 = new SmartphoneIOS("iPhone", 222.11);
+        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid("HTC", 99.99);
+
+        smartphoneios1.porneste();
+        smartphoneios1.seOpreste();
+        smartphoneios1.afiseazaPret();
+        smartphoneAndroid1.porneste();
+        smartphoneAndroid1.seOpreste();
+
+// exercitii lab 28 - 16.02.2023
 //
-//        smartphoneios1.porneste();
-//        smartphoneios1.seOpreste();
-//        smartphoneAndroid1.porneste();
-//        smartphoneAndroid1.seOpreste();
+//        Inotator inotator1 = new Inotator("400 m spate", "Romania");
+//        Maratonist maratonist1 = new Maratonist("40 km", "SUA");
+//        //maratonist1.seAntreneaza();
+//        //maratonist1.seOdihneste();
+//        //maratonist1.ceTaraReprezinta();
+//        inotator1.seOdihneste();
+//        //inotator1.ceTaraReprezinta();
 
 
-        Inotator inotator1 = new Inotator("400 m spate", "Romania");
-        Maratonist maratonist1 = new Maratonist("40 km", "SUA");
-        maratonist1.seAntreneaza();
-        maratonist1.seOdihneste();
-        //maratonist1.ceTaraReprezinta();
-        inotator1.seOdihneste();
-        inotator1.ceTaraReprezinta();
+// homework lab 28 - 16.01.2023
+
+
 
 // pana aici!!!
     }

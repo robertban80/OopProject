@@ -1,6 +1,13 @@
 public class Smartphone extends Device{
-    private String marca = "no name";
-    @Override
+    protected String marca;
+    protected double pret;
+
+    public Smartphone(String marca, double pret) {
+        this.marca = marca;
+        this.pret = pret;
+    }
+
+       @Override
     void porneste() {
         System.out.println("Telefonul porneste");
     }
@@ -8,5 +15,9 @@ public class Smartphone extends Device{
     @Override
     void seOpreste() {
         System.out.println("Telefonul se opreste");
+    }
+
+    protected void afiseazaPret() {
+        System.out.println("Pretul e: " + pret);
     }
 }
