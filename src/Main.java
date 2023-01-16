@@ -150,14 +150,23 @@ public class Main {
 
 
 // exercitii lab 27
-        System.out.println("Exercitii Lab 27! \n");
-        SmartphoneIOS smartphoneios1 = new SmartphoneIOS();
-        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid();
+//        System.out.println("Exercitii Lab 27! \n");
+//        SmartphoneIOS smartphoneios1 = new SmartphoneIOS();
+//        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid();
+//
+//        smartphoneios1.porneste();
+//        smartphoneios1.seOpreste();
+//        smartphoneAndroid1.porneste();
+//        smartphoneAndroid1.seOpreste();
 
-        smartphoneios1.porneste();
-        smartphoneios1.seOpreste();
-        smartphoneAndroid1.porneste();
-        smartphoneAndroid1.seOpreste();
+
+        Inotator inotator1 = new Inotator("400 m spate", "Romania");
+        Maratonist maratonist1 = new Maratonist("40 km", "SUA");
+        maratonist1.seAntreneaza();
+        maratonist1.seOdihneste();
+        //maratonist1.ceTaraReprezinta();
+        inotator1.seOdihneste();
+        inotator1.ceTaraReprezinta();
 
 // pana aici!!!
     }
