@@ -35,11 +35,19 @@ public class StructuriDeDate {
         cineTreceExamenul.put("Maricica",true);
         cineTreceExamenul.put("Ana",true);
         cineTreceExamenul.put("Costel",false);
-
+        //afisez tot setul
+        System.out.println("\nAfisare sub forma de set/dictionar");
+        System.out.println(cineTreceExamenul);
+        //afisez sub forma de lista
+        System.out.println("\nAfisare sub forma de lista");
         System.out.println(cineTreceExamenul.entrySet());
+        //accesez o inregistrare
+        System.out.println(cineTreceExamenul.get("Ana"));
 
-        for (String value: cineTreceExamenul){
-            System.out.println(value);
+// rezolvare ex. 13 din tema lab 28 - 16.02.2023
+        for (String value: cineTreceExamenul.keySet()){
+            if (cineTreceExamenul.get(value) == true) {System.out.println(value);}
+
         }
     }
 }
